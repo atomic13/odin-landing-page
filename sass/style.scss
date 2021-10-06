@@ -1,0 +1,159 @@
+@import 'config';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: $font-stack;
+    font-size: 18px;
+    
+}
+
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: $dark-color;
+
+    .logo-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .hero{
+        color: $main-text;
+    }
+
+    .logo{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav a{
+        padding: 10px;
+    }
+
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+
+        .rigth, .left{
+            width: 40%;
+        }
+
+        img{
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .hero{
+            font-size: 48px;
+            font-weight: bolder;
+        }
+
+        .secondary{
+            margin: 10px 0;
+            color: $secondary-text;
+            opacity: 0.8;
+        }
+    }
+}
+
+.information{
+    text-align: center;
+    padding: 50px 0;
+
+    h2{
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+    .cards-grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        img{
+            width: 200px;
+            height: 200px;
+            border: 2px solid $action-color;
+            border-radius: 10px;
+        }
+        p{
+            opacity: 0.7;
+        }
+    }
+
+    .card{
+        margin: 50px 0;
+        width: 200px;
+    }
+}
+
+.quote{
+    background-color: $secondary-text;
+    padding: 100px 200px;
+    
+    p{
+        font-style: italic;
+        opacity: 0.6;
+        font-size: 36px;
+        
+    }
+
+    cite{
+        font-style: normal;
+        font-weight: bold;
+        float: right;
+    }
+}
+
+.action-section{
+    width: 50%;
+    margin: 100px auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .text{
+        padding: 30px 0;
+    }
+
+    a{
+        border: 2px solid #fff;
+        padding: 5px 18px;
+        border-radius: 5px;
+        
+    }
+}
+
+footer{
+    background-color: $dark-color;
+    padding: 25px 0;
+    color: $main-text;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: $secondary-text;
+    opacity: 0.9;
+}
+
+.action{
+    background-color: $action-color;
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: $secondary-text;
+}
